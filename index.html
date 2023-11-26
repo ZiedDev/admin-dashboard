@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <nav>
+            <div class="navigation-section">
+                <div class="title nav-button">
+                    <div class="logo-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M1 0a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H1Zm7 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2.01a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm0 6a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V7Zm-8 3.99a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1V13a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-2.01Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="title-text">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+                <div class="home nav-button">
+                    <div class="home-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M7.707 1.293a1 1 0 0 0-1.414 0l-6 6a1 1 0 0 0 1.414 1.414L2 8.414V13a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8.414l.293.293a1 1 0 1 0 1.414-1.414l-6-6Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="home-text">
+                        <h1>Home</h1>
+                    </div>
+                </div>
+                <div class="profile nav-button">
+                    <div class="profile-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <g fill="none">
+                                <path fill="currentColor"
+                                    d="M12 13c2.396 0 4.575.694 6.178 1.671c.8.49 1.484 1.065 1.978 1.69c.486.616.844 1.352.844 2.139c0 .845-.411 1.511-1.003 1.986c-.56.45-1.299.748-2.084.956c-1.578.417-3.684.558-5.913.558s-4.335-.14-5.913-.558c-.785-.208-1.524-.506-2.084-.956C3.41 20.01 3 19.345 3 18.5c0-.787.358-1.523.844-2.139c.494-.625 1.177-1.2 1.978-1.69C7.425 13.694 9.605 13 12 13Zm0-11a5 5 0 1 1 0 10a5 5 0 0 1 0-10Z" />
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="profile-text">
+                        <h1>Profile</h1>
+                    </div>
+                </div>
+                <div class="messages nav-button">
+                    <div class="messages-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M4.848 2.771A49.144 49.144 0 0 1 12 2.25c2.43 0 4.817.178 7.152.52c1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a49.36 49.36 0 0 1-5.922.505a.39.39 0 0 0-.266.112L8.78 21.53A.75.75 0 0 1 7.5 21v-3.955a48.842 48.842 0 0 1-2.652-.316c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="messages-text">
+                        <h1>Messages</h1>
+                    </div>
+                </div>
+                <div class="history nav-button">
+                    <div class="histroy-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M7 14A7 7 0 1 0 7 0a7 7 0 0 0 0 14Zm.625-9.5a.625.625 0 1 0-1.25 0V7c0 .146.051.288.145.4l2.5 3a.625.625 0 1 0 .96-.8L7.625 6.774V4.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="history-text">
+                        <h1>History</h1>
+                    </div>
+                </div>
+                <div class="community nav-button">
+                    <div class="community-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
+                            <path fill="currentColor"
+                                d="M7.879 7.5c.504-.61 1.267-1 2.121-1c.854 0 1.617.39 2.121 1a2.75 2.75 0 1 1-4.243 0Zm5.871 1.75c0-.632-.156-1.228-.432-1.75H17.5A1.5 1.5 0 0 1 19 9v.5c0 1.587-1.206 3.212-3.315 3.784A2.5 2.5 0 0 0 13.5 12h-.95a3.74 3.74 0 0 0 1.2-2.75ZM13.5 13a1.496 1.496 0 0 1 1.5 1.5v.5c0 1.971-1.86 4-5 4c-3.14 0-5-2.029-5-4v-.5A1.496 1.496 0 0 1 6.5 13h7ZM1 9.5c0 1.587 1.206 3.212 3.315 3.784A2.5 2.5 0 0 1 6.5 12h.95a3.74 3.74 0 0 1-1.2-2.75c0-.632.156-1.228.433-1.75H2.5A1.5 1.5 0 0 0 1 9v.5Zm7.75-5.75a2.75 2.75 0 1 0-5.5 0a2.75 2.75 0 0 0 5.5 0Zm8 0a2.75 2.75 0 1 0-5.5 0a2.75 2.75 0 0 0 5.5 0Z" />
+                        </svg>
+                    </div>
+                    <div class="community-text">
+                        <h1>Communities</h1>
+                    </div>
+                </div>
+                <div class="tasks nav-button">
+                    <div class="tasks-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M.658.44A1.5 1.5 0 0 1 1.718 0h5.587a1.5 1.5 0 0 1 1.06.44l3.414 3.414a1.5 1.5 0 0 1 .44 1.06V12.5a1.5 1.5 0 0 1-1.5 1.5h-9a1.5 1.5 0 0 1-1.5-1.5v-11c0-.398.158-.78.44-1.06ZM5.33 4.527a.75.75 0 0 1 .175 1.047L4.108 7.53a.75.75 0 0 1-1.14.094l-.838-.838a.75.75 0 0 1 1.06-1.06l.212.211l.882-1.234a.75.75 0 0 1 1.046-.175Zm.95 1.847a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm0 3.969a.75.75 0 0 1 .75-.75h2.5a.75.75 0 0 1 0 1.5h-2.5a.75.75 0 0 1-.75-.75Zm-.775-.738a.75.75 0 1 0-1.22-.872l-.883 1.235l-.212-.212a.75.75 0 0 0-1.06 1.06l.838.838a.75.75 0 0 0 1.14-.094l1.397-1.955Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="tasks-text">
+                        <h1>Tasks</h1>
+                    </div>
+                </div>
+                <div class="settings nav-button">
+                    <div class="settings-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="m5.557.69l-.463 1.195l-1.594.904l-1.27-.194a1.077 1.077 0 0 0-1.078.528l-.43.754a1.077 1.077 0 0 0 .086 1.217l.807 1.001v1.81L.83 8.906a1.077 1.077 0 0 0-.086 1.217l.43.754a1.077 1.077 0 0 0 1.078.528l1.27-.194l1.573.904l.463 1.196a1.076 1.076 0 0 0 1 .689h.905a1.076 1.076 0 0 0 1.002-.69l.463-1.195l1.572-.904l1.27.194a1.077 1.077 0 0 0 1.078-.528l.43-.754a1.077 1.077 0 0 0-.086-1.217l-.807-1.001v-1.81l.786-1.001a1.077 1.077 0 0 0 .086-1.217l-.43-.754a1.076 1.076 0 0 0-1.078-.528l-1.27.194l-1.573-.904L8.443.689A1.077 1.077 0 0 0 7.442 0h-.884a1.077 1.077 0 0 0-1.001.69ZM7 9.25a2.25 2.25 0 1 0 0-4.5a2.25 2.25 0 0 0 0 4.5Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="settings-text">
+                        <h1>Settings</h1>
+                    </div>
+                </div>
+                <div class="support nav-button">
+                    <div class="support-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M14 7A7 7 0 1 1 0 7a7 7 0 0 1 14 0ZM5.75 5.25A1.25 1.25 0 1 1 7 6.5a.75.75 0 0 0-.75.75v.646a.75.75 0 1 0 1.5 0a2.751 2.751 0 1 0-3.5-2.646a.75.75 0 0 0 1.5 0ZM8 10.5a1 1 0 1 1-2 0a1 1 0 0 1 2 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="support-text">
+                        <h1>Support</h1>
+                    </div>
+                </div>
+
+                <div class="privacy nav-button">
+                    <div class="privacy-icon icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 14 14">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M0 1.75C0 .784.784 0 1.75 0h10.5C13.216 0 14 .783 14 1.75v3.257a9.307 9.307 0 0 1-6.57 8.895a1.45 1.45 0 0 1-.86 0A9.307 9.307 0 0 1 0 5.007V1.75ZM7 6.5A2.25 2.25 0 1 0 7 2a2.25 2.25 0 0 0 0 4.5Zm4.152 2.893A5.487 5.487 0 0 0 7 7.5a5.487 5.487 0 0 0-4.152 1.893A7.798 7.798 0 0 0 7 12.465a7.798 7.798 0 0 0 4.152-3.072Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="privacy-text">
+                        <h1>Privacy</h1>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="page-header">
+                <div class="search-section">
+                    <div class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                            <path fill="currentColor"
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7l126.6 126.7c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 1 0 0-288a144 144 0 1 0 0 288z" />
+                        </svg>
+                    </div>
+                    <input type="text" class="search-text-field" id="search-text-field">
+                </div>
+
+                <div class="profile">
+                    <div class="bell-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+                            <path fill="currentColor"
+                                d="M172 228a12 12 0 0 1-12 12H96a12 12 0 0 1 0-24h64a12 12 0 0 1 12 12Zm58.94-169.52a115.25 115.25 0 0 0-40.54-44.62a12 12 0 1 0-12.8 20.29a90.1 90.1 0 0 1 32 35.38A12 12 0 0 0 220.3 76a11.86 11.86 0 0 0 5.51-1.35a12 12 0 0 0 5.13-16.17ZM46.37 69.53a90.1 90.1 0 0 1 32-35.38A12 12 0 1 0 65.6 13.86a115.25 115.25 0 0 0-40.54 44.62a12 12 0 0 0 5.13 16.17A11.86 11.86 0 0 0 35.7 76a12 12 0 0 0 10.67-6.47Zm173.51 98.35A20 20 0 0 1 204 200H52a20 20 0 0 1-15.91-32.12c7.17-9.33 15.73-26.62 15.88-55.94A76 76 0 0 1 204 112c.15 29.26 8.71 46.55 15.88 55.88ZM196.34 176c-8.16-13-16.19-33.57-16.34-63.94A52 52 0 1 0 76 112c-.15 30.42-8.18 51-16.34 64Z" />
+                        </svg>
+                    </div>
+
+                    <div class="account-icon">
+                        <img src="./images/icon-1.png" alt="">
+                    </div>
+                    <div class="account-name">
+                        <h2>Zied Refeat</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="greeting-section">
+                <div class="user-greeting">
+                    <div class="user-icon">
+                        <img src="./images/icon-1.png" alt="">
+                    </div>
+                    <div class="greeting">
+                        <h4>Hi there,</h4>
+                        <h2>Zied Refeat (@ZiedRe)</h2>
+                    </div>
+                </div>
+                <div class="dashboard-controls">
+                    <button class="new-button dashboard-controls-button">
+                        <h3>New</h3>
+                    </button>
+                    <button class="upload-button dashboard-controls-button">
+                        <h3>Upload</h3>
+                    </button>
+                    <button class="share-button dashboard-controls-button">
+                        <h3>Share</h3>
+                    </button>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <section class="projects-section">
+                    <h2>Your Projects</h2>
+                    <div class="projects-cards-container">
+                        <div class="projects-cards">
+                            <div class="card">
+                                <div class="color-side"></div>
+                                <h3>Super Cool Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga commodi unde
+                                    quo
+                                    nostrum et provident tenetur dignissimos nam illum?</p>
+                                <div class="card-icons">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2q.45 0 .863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.163t1.012-.762L7.625 6.4ZM8.85 8.125L4 9.725L7.1 14.2L7 18.975l5-1.375l5 1.4l-.1-4.8L20 9.775l-4.85-1.65L12 4L8.85 8.125ZM12 11.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="watchlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 16q1.875 0 3.188-1.313T16.5 11.5q0-1.875-1.313-3.188T12 7q-1.875 0-3.188 1.313T7.5 11.5q0 1.875 1.313 3.188T12 16Zm0-1.8q-1.125 0-1.913-.788T9.3 11.5q0-1.125.788-1.913T12 8.8q1.125 0 1.913.788T14.7 11.5q0 1.125-.787 1.913T12 14.2Zm0 4.8q-3.65 0-6.65-2.038T1 11.5q1.35-3.425 4.35-5.463T12 4q3.65 0 6.65 2.038T23 11.5q-1.35 3.425-4.35 5.463T12 19Zm0-7.5Zm0 5.5q2.825 0 5.188-1.488T20.8 11.5q-1.25-2.525-3.613-4.013T12 6Q9.175 6 6.812 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fork">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065c2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5C21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313c-.146.735-.565 1.791-1.778 2.252c-1.192.452-2.053.953-2.646 1.536c-.593-.583-1.453-1.084-2.646-1.536c-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5s1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7S5 6.327 5 5.5S5.673 4 6.5 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="color-side"></div>
+                                <h3>Super Cool Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga commodi unde
+                                    quo
+                                    nostrum et provident tenetur dignissimos nam illum?</p>
+                                <div class="card-icons">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2q.45 0 .863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.163t1.012-.762L7.625 6.4ZM8.85 8.125L4 9.725L7.1 14.2L7 18.975l5-1.375l5 1.4l-.1-4.8L20 9.775l-4.85-1.65L12 4L8.85 8.125ZM12 11.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="watchlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 16q1.875 0 3.188-1.313T16.5 11.5q0-1.875-1.313-3.188T12 7q-1.875 0-3.188 1.313T7.5 11.5q0 1.875 1.313 3.188T12 16Zm0-1.8q-1.125 0-1.913-.788T9.3 11.5q0-1.125.788-1.913T12 8.8q1.125 0 1.913.788T14.7 11.5q0 1.125-.787 1.913T12 14.2Zm0 4.8q-3.65 0-6.65-2.038T1 11.5q1.35-3.425 4.35-5.463T12 4q3.65 0 6.65 2.038T23 11.5q-1.35 3.425-4.35 5.463T12 19Zm0-7.5Zm0 5.5q2.825 0 5.188-1.488T20.8 11.5q-1.25-2.525-3.613-4.013T12 6Q9.175 6 6.812 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fork">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065c2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5C21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313c-.146.735-.565 1.791-1.778 2.252c-1.192.452-2.053.953-2.646 1.536c-.593-.583-1.453-1.084-2.646-1.536c-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5s1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7S5 6.327 5 5.5S5.673 4 6.5 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="color-side"></div>
+                                <h3>Super Cool Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga commodi unde
+                                    quo
+                                    nostrum et provident tenetur dignissimos nam illum?</p>
+                                <div class="card-icons">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2q.45 0 .863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.163t1.012-.762L7.625 6.4ZM8.85 8.125L4 9.725L7.1 14.2L7 18.975l5-1.375l5 1.4l-.1-4.8L20 9.775l-4.85-1.65L12 4L8.85 8.125ZM12 11.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="watchlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 16q1.875 0 3.188-1.313T16.5 11.5q0-1.875-1.313-3.188T12 7q-1.875 0-3.188 1.313T7.5 11.5q0 1.875 1.313 3.188T12 16Zm0-1.8q-1.125 0-1.913-.788T9.3 11.5q0-1.125.788-1.913T12 8.8q1.125 0 1.913.788T14.7 11.5q0 1.125-.787 1.913T12 14.2Zm0 4.8q-3.65 0-6.65-2.038T1 11.5q1.35-3.425 4.35-5.463T12 4q3.65 0 6.65 2.038T23 11.5q-1.35 3.425-4.35 5.463T12 19Zm0-7.5Zm0 5.5q2.825 0 5.188-1.488T20.8 11.5q-1.25-2.525-3.613-4.013T12 6Q9.175 6 6.812 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fork">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065c2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5C21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313c-.146.735-.565 1.791-1.778 2.252c-1.192.452-2.053.953-2.646 1.536c-.593-.583-1.453-1.084-2.646-1.536c-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5s1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7S5 6.327 5 5.5S5.673 4 6.5 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="color-side"></div>
+                                <h3>Super Cool Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga commodi unde
+                                    quo
+                                    nostrum et provident tenetur dignissimos nam illum?</p>
+                                <div class="card-icons">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2q.45 0 .863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.163t1.012-.762L7.625 6.4ZM8.85 8.125L4 9.725L7.1 14.2L7 18.975l5-1.375l5 1.4l-.1-4.8L20 9.775l-4.85-1.65L12 4L8.85 8.125ZM12 11.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="watchlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 16q1.875 0 3.188-1.313T16.5 11.5q0-1.875-1.313-3.188T12 7q-1.875 0-3.188 1.313T7.5 11.5q0 1.875 1.313 3.188T12 16Zm0-1.8q-1.125 0-1.913-.788T9.3 11.5q0-1.125.788-1.913T12 8.8q1.125 0 1.913.788T14.7 11.5q0 1.125-.787 1.913T12 14.2Zm0 4.8q-3.65 0-6.65-2.038T1 11.5q1.35-3.425 4.35-5.463T12 4q3.65 0 6.65 2.038T23 11.5q-1.35 3.425-4.35 5.463T12 19Zm0-7.5Zm0 5.5q2.825 0 5.188-1.488T20.8 11.5q-1.25-2.525-3.613-4.013T12 6Q9.175 6 6.812 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fork">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065c2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5C21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313c-.146.735-.565 1.791-1.778 2.252c-1.192.452-2.053.953-2.646 1.536c-.593-.583-1.453-1.084-2.646-1.536c-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5s1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7S5 6.327 5 5.5S5.673 4 6.5 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="color-side"></div>
+                                <h3>Super Cool Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga commodi unde
+                                    quo
+                                    nostrum et provident tenetur dignissimos nam illum?</p>
+                                <div class="card-icons">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2q.45 0 .863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.163t1.012-.762L7.625 6.4ZM8.85 8.125L4 9.725L7.1 14.2L7 18.975l5-1.375l5 1.4l-.1-4.8L20 9.775l-4.85-1.65L12 4L8.85 8.125ZM12 11.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="watchlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 16q1.875 0 3.188-1.313T16.5 11.5q0-1.875-1.313-3.188T12 7q-1.875 0-3.188 1.313T7.5 11.5q0 1.875 1.313 3.188T12 16Zm0-1.8q-1.125 0-1.913-.788T9.3 11.5q0-1.125.788-1.913T12 8.8q1.125 0 1.913.788T14.7 11.5q0 1.125-.787 1.913T12 14.2Zm0 4.8q-3.65 0-6.65-2.038T1 11.5q1.35-3.425 4.35-5.463T12 4q3.65 0 6.65 2.038T23 11.5q-1.35 3.425-4.35 5.463T12 19Zm0-7.5Zm0 5.5q2.825 0 5.188-1.488T20.8 11.5q-1.25-2.525-3.613-4.013T12 6Q9.175 6 6.812 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fork">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065c2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5C21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313c-.146.735-.565 1.791-1.778 2.252c-1.192.452-2.053.953-2.646 1.536c-.593-.583-1.453-1.084-2.646-1.536c-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5s1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7S5 6.327 5 5.5S5.673 4 6.5 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="color-side"></div>
+                                <h3>Super Cool Project</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore fuga commodi unde
+                                    quo
+                                    nostrum et provident tenetur dignissimos nam illum?</p>
+                                <div class="card-icons">
+                                    <div class="star">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="m7.625 6.4l2.8-3.625q.3-.4.713-.587T12 2q.45 0 .863.188t.712.587l2.8 3.625l4.25 1.425q.65.2 1.025.738t.375 1.187q0 .3-.088.6t-.287.575l-2.75 3.9l.1 4.1q.025.875-.575 1.475t-1.4.6q-.05 0-.55-.075L12 19.675l-4.475 1.25q-.125.05-.275.063T6.975 21q-.8 0-1.4-.6T5 18.925l.1-4.125l-2.725-3.875q-.2-.275-.288-.575T2 9.75q0-.625.363-1.163t1.012-.762L7.625 6.4ZM8.85 8.125L4 9.725L7.1 14.2L7 18.975l5-1.375l5 1.4l-.1-4.8L20 9.775l-4.85-1.65L12 4L8.85 8.125ZM12 11.5Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="watchlist">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M12 16q1.875 0 3.188-1.313T16.5 11.5q0-1.875-1.313-3.188T12 7q-1.875 0-3.188 1.313T7.5 11.5q0 1.875 1.313 3.188T12 16Zm0-1.8q-1.125 0-1.913-.788T9.3 11.5q0-1.125.788-1.913T12 8.8q1.125 0 1.913.788T14.7 11.5q0 1.125-.787 1.913T12 14.2Zm0 4.8q-3.65 0-6.65-2.038T1 11.5q1.35-3.425 4.35-5.463T12 4q3.65 0 6.65 2.038T23 11.5q-1.35 3.425-4.35 5.463T12 19Zm0-7.5Zm0 5.5q2.825 0 5.188-1.488T20.8 11.5q-1.25-2.525-3.613-4.013T12 6Q9.175 6 6.812 7.488T3.2 11.5q1.25 2.525 3.613 4.013T12 17Z" />
+                                        </svg>
+                                    </div>
+                                    <div class="fork">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M5.559 8.855c.166 1.183.789 3.207 3.087 4.079C11 13.829 11 14.534 11 15v.163c-1.44.434-2.5 1.757-2.5 3.337c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5c0-1.58-1.06-2.903-2.5-3.337V15c0-.466 0-1.171 2.354-2.065c2.298-.872 2.921-2.896 3.087-4.079C19.912 8.441 21 7.102 21 5.5C21 3.57 19.43 2 17.5 2S14 3.57 14 5.5c0 1.552 1.022 2.855 2.424 3.313c-.146.735-.565 1.791-1.778 2.252c-1.192.452-2.053.953-2.646 1.536c-.593-.583-1.453-1.084-2.646-1.536c-1.213-.461-1.633-1.517-1.778-2.252C8.978 8.355 10 7.052 10 5.5C10 3.57 8.43 2 6.5 2S3 3.57 3 5.5c0 1.602 1.088 2.941 2.559 3.355zM17.5 4c.827 0 1.5.673 1.5 1.5S18.327 7 17.5 7S16 6.327 16 5.5S16.673 4 17.5 4zm-4 14.5c0 .827-.673 1.5-1.5 1.5s-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5s1.5.673 1.5 1.5zM6.5 4C7.327 4 8 4.673 8 5.5S7.327 7 6.5 7S5 6.327 5 5.5S5.673 4 6.5 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="announcements-section">
+                    <h2>Announcements</h2>
+                    <div class="announcements-container">
+                        <div class="announcement-1">
+                            <h3>Announcement 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta inventore debitis
+                                blanditiis natus, libero enim!</p>
+                        </div>
+                        <div class="line"></div>
+                        <div class="announcement-2">
+                            <h3>Announcement 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta inventore debitis
+                                blanditiis natus, libero enim!</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="trending-section">
+                    <h2>Trending</h2>
+                    <div class="trending-cards-container">
+                        <div class="trending-card">
+                            <div class="img-container">
+                                <img src="./images/icon-1.png" alt="">
+                            </div>
+                            <h3>@Yasso</h3>
+                            <p>Yasseen Kamel</p>
+                        </div>
+                        <div class="trending-card">
+                            <div class="img-container">
+                                <img src="./images/icon-2.gif" alt="">
+                            </div>
+                            <h3>@Sherbo</h3>
+                            <p>Omar El Sherbiny</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
